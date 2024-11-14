@@ -158,5 +158,11 @@ li {
       }
 }
 
+    .navbar_list li a {
+    font-size: 15px;
+    font-weight: 500;
+}
+    
+
 
 `;

@@ -16,8 +16,8 @@ const Header = () => {
 };
 
 const MainHeader = styled.header`
-  padding: 0 4.8rem;
-  height: 10rem;
+  padding: 0 5rem;
+  height: 8rem;
   background-color: ${({ theme }) => theme.colors.bg};
   display: flex;
   justify-content: space-between;
@@ -25,7 +25,7 @@ const MainHeader = styled.header`
 
   .logo {
     height: auto;
-    max-width: 30%;
+    max-width: 70%;
   }
 `;
 
