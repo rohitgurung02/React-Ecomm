@@ -2,13 +2,16 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import { Button } from "../styles/Button";
 import styled from "styled-components";
+import { useGlobalContext } from "../Context";
 
-const HeroSection = ({name, image}) => {
+
+const HeroSection = () => {
+  const { name, image } = useGlobalContext();
   return (
     <Wrapper>
       <div className="container grid grid-two-column">
         <div className="section-hero-data">
-          <p className="hero-top-data">John Doe</p>
+          <p className="hero-top-data">{name}</p>
           <h1 className="hero-heading">{name}</h1>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore
